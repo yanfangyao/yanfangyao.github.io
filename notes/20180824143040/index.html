@@ -1,0 +1,381 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.5e4a344fb0ad9e1a7e23.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-4124805c0503dbfe42dd67d7f5715964.woff2) format("woff2"),url(/static/montserrat-latin-100-c8fb2f714bbc7bc3e8dfffa916b286dc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e4bf47bd171a9b2a72dd84c58bf90edf.woff2) format("woff2"),url(/static/montserrat-latin-100italic-d1f3f2d02ee4d7d2d4b1ad865014f189.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-444ae007121264bc1969d49b4031f9b2.woff2) format("woff2"),url(/static/montserrat-latin-200-edbce16a90aa22c297a0307b85789837.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-f316c5d1ec40f3e68654c3f38b3999f3.woff2) format("woff2"),url(/static/montserrat-latin-200italic-d7bbb730d9b5e11720b3eb32326dcca7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-0a7c6df06e85d978d096d4d18fd8d43d.woff2) format("woff2"),url(/static/montserrat-latin-300-5e86df2cad22d2ef2b03516334afae5e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-c076c4892bc7a4be7b9097e97a35012d.woff2) format("woff2"),url(/static/montserrat-latin-300italic-37c74a8d2d0d36a0a2c6e9a37ee15b0c.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-501ce09c42716a2f6e1503a25eb174c9.woff2) format("woff2"),url(/static/montserrat-latin-400-f29d2b8559699b6beb5b29b25b8bc572.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-882908d9950d9c86ebd380877f293d95.woff2) format("woff2"),url(/static/montserrat-latin-400italic-22e7b04e5f2a901d49d4d342315a715a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-f0f2716c5fe401d175b88715e7d28685.woff2) format("woff2"),url(/static/montserrat-latin-500-991b453bf90a0980e78966d2af7e3d3a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-4590ebba421b3288c305305d7fa7b504.woff2) format("woff2"),url(/static/montserrat-latin-500italic-f3d41e4cdcc2314e49ddcea751d6f87f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-15c24f7109941777774ddd2c636c6a50.woff2) format("woff2"),url(/static/montserrat-latin-600-f6dc6096f48956908c1787d9a722570a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-6d10b80529d5c36c7c09fca7193af0fc.woff2) format("woff2"),url(/static/montserrat-latin-600italic-02c4833312d94b1b0866f073023a250e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-79982cd1f74c6fa7451bf9b37ead09ff.woff2) format("woff2"),url(/static/montserrat-latin-700-957e93fbbe131a59791cd820d98b7109.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-283438e9577fe6a684466bb100e105ec.woff2) format("woff2"),url(/static/montserrat-latin-700italic-ca627c5ccc65cf80c2ecaea44b997de9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-35386154b78d046218fc8f88a44ff515.woff2) format("woff2"),url(/static/montserrat-latin-800-756655905d91b77960888262e7d58d35.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-e1b52a7bd83e2324db6d92bdc206844c.woff2) format("woff2"),url(/static/montserrat-latin-800italic-a69f0add9d86c1a84311d7dd8693ba4a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-260c2ea3ef57feb82251952e605a36d5.woff2) format("woff2"),url(/static/montserrat-latin-900-186cae8091da578150d81958e217714a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-d785fb9fc74588ffb7f306799709a97d.woff2) format("woff2"),url(/static/montserrat-latin-900italic-43b527fe77254f97ea36e2b54e845ec4.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-a50c381443e6993188ed9cc4b6806866.woff2) format("woff2"),url(/static/merriweather-latin-300-2c73b119ad85e697123658b8a091ff83.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-bd410cbf8c272acd4fbdd9f61a7015bf.woff2) format("woff2"),url(/static/merriweather-latin-300italic-9deeb422b65afb1daacc039296bb3640.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-f936cb550d4dcd769f75c453207ac5e6.woff2) format("woff2"),url(/static/merriweather-latin-400-ab0616e6d856817eff54eb8c5e1664e4.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-5c9a23d08e2c851e5a25795b940acd4f.woff2) format("woff2"),url(/static/merriweather-latin-400italic-0ab4b54f3b1e8b14cf755970fde8ce35.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-1636f13a52ca3f0eb8784c9c57f62082.woff2) format("woff2"),url(/static/merriweather-latin-700-cc673c945b482dc1378d4a3c95ffd175.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-8b0db67123584893c6591accbc51640c.woff2) format("woff2"),url(/static/merriweather-latin-700italic-513649f5b9ba4675cff15cf3f7ad4f2a.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-46631a9aab93dec3ed34f429dd1a5646.woff2) format("woff2"),url(/static/merriweather-latin-900-a0528570caa2c785891308ce604d8db7.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-a26a8168916e5d4e5485081171d7fdb0.woff2) format("woff2"),url(/static/merriweather-latin-900italic-db42a3f34378e69ef5aebb6717f1f33e.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:100;src:local("Lato Thin "),local("Lato-Thin"),url(/static/lato-latin-100-f8028e61362a54aa64dcb26e8063d0d7.woff2) format("woff2"),url(/static/lato-latin-100-752c20224144760a496fb9e19a62f616.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:100;src:local("Lato Thin italic"),local("Lato-Thinitalic"),url(/static/lato-latin-100italic-ef884f11c6adb5df51c446911612e7af.woff2) format("woff2"),url(/static/lato-latin-100italic-6ea8380326f67e10380953b188d96a2b.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:300;src:local("Lato Light "),local("Lato-Light"),url(/static/lato-latin-300-bbbd26aeee9c5b967e35933bce02d358.woff2) format("woff2"),url(/static/lato-latin-300-ba2452bdc790a4fee05202eac3c092b3.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:300;src:local("Lato Light italic"),local("Lato-Lightitalic"),url(/static/lato-latin-300italic-7d718d7299ab7f9fab17d7d4f13ded57.woff2) format("woff2"),url(/static/lato-latin-300italic-06eb177ee6c1960bcd79f1cf8c812000.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:400;src:local("Lato Regular "),local("Lato-Regular"),url(/static/lato-latin-400-f1a4a058fbba1e35a406188ae7eddaf8.woff2) format("woff2"),url(/static/lato-latin-400-62fb51e9e645f63599238881b9de15dd.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:400;src:local("Lato Regular italic"),local("Lato-Regularitalic"),url(/static/lato-latin-400italic-b45e52f342dc29c8553f51a99f924871.woff2) format("woff2"),url(/static/lato-latin-400italic-c4082958a18f04bd32a3d3e1f5e390a5.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:700;src:local("Lato Bold "),local("Lato-Bold"),url(/static/lato-latin-700-7fbbfd1610770d594aef639cfefdd0b0.woff2) format("woff2"),url(/static/lato-latin-700-96759e32fdc800c78b527a3e53fe2be6.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:700;src:local("Lato Bold italic"),local("Lato-Bolditalic"),url(/static/lato-latin-700italic-c66215e09d2420885ad1a1f3eb2bac37.woff2) format("woff2"),url(/static/lato-latin-700italic-0a06ba1bdf385495f2679324cfbedd13.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:900;src:local("Lato Black "),local("Lato-Black"),url(/static/lato-latin-900-f2de2c6ec69b0c11f1bc44c5348c2f35.woff2) format("woff2"),url(/static/lato-latin-900-d79dd0661ba130ec7a7e7c060fcb7e09.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:900;src:local("Lato Black italic"),local("Lato-Blackitalic"),url(/static/lato-latin-900italic-fd67cf72cde7716bdadf8a3992b37fa2.woff2) format("woff2"),url(/static/lato-latin-900italic-e792d6c62329e025ca1cbea793ba8de5.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}pre[class*=language-].line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}pre[class*=language-].line-numbers>code{position:relative;white-space:inherit}.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:0;font-size:100%;left:-3.8em;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}</style><meta name="generator" content="Gatsby 2.1.18"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#fff"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png"/><title data-react-helmet="true">MVC、MVP、MVVM软件架构学习笔记 | William&#x27;s Blog</title><meta data-react-helmet="true" name="description" content="MVC、MVP和MVVM是开发GUI（图形用户界面）应用程序时常用的软件架构模式。它们的目的是通过一些手段将GUI应用程序的用户界面（View）和数据（Model）进行分离，提高代码的可复用性和可维护性。本文对三种架构模式的思想进行了深入研究并对比分析了它们的优缺点。"/><meta data-react-helmet="true" property="og:title" content="MVC、MVP、MVVM软件架构学习笔记"/><meta data-react-helmet="true" property="og:description" content="MVC、MVP和MVVM是开发GUI（图形用户界面）应用程序时常用的软件架构模式。它们的目的是通过一些手段将GUI应用程序的用户界面（View）和数据（Model）进行分离，提高代码的可复用性和可维护性。本文对三种架构模式的思想进行了深入研究并对比分析了它们的优缺点。"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="William"/><meta data-react-helmet="true" name="twitter:title" content="MVC、MVP、MVVM软件架构学习笔记"/><meta data-react-helmet="true" name="twitter:description" content="MVC、MVP和MVVM是开发GUI（图形用户界面）应用程序时常用的软件架构模式。它们的目的是通过一些手段将GUI应用程序的用户界面（View）和数据（Model）进行分离，提高代码的可复用性和可维护性。本文对三种架构模式的思想进行了深入研究并对比分析了它们的优缺点。"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;font-family:PingFang SC,Helvetica Neue,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Helvetica,Arial,Verdana,sans-serif;
+;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}.gatsby-highlight-code-line{background-color:#feb;display:block;margin-right:-1em;margin-left:-1em;padding-right:1em;padding-left:0.75em;border-left:0.25em solid #f99;color:rgba(0, 0, 0, .9);}.gatsby-highlight-code-line .token.punctuation{color:rgba(0, 0, 0, .9);}.gatsby-highlight{background-color:#2d2d2d;border-radius:0.3em;margin:0.5em 0;padding:1em;overflow:auto;}.gatsby-highlight pre[class*="language-"]{background-color:transparent;margin:0;padding:0;overflow:initial;float:left;min-width:100%;}.gatsby-highlight pre[class*="language-"].line-numbers{padding-left:2.8em;}</style><style data-styled="hsSGOy gCQMkg iLwMgH itkTeT guBkEQ jwJkRe kiXwkj dZBnav fBJedd" data-styled-version="4.1.3">
+/* sc-component-id: bio__Container-w4lf8v-0 */
+.jwJkRe{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:5.25rem;}
+/* sc-component-id: bio__StyledImage-w4lf8v-1 */
+.kiXwkj{margin-right:0.875rem;margin-bottom:0;min-width:50;border-radius:100%;-webkit-flex:none;-ms-flex:none;flex:none;}
+/* sc-component-id: bio__Paragraph-w4lf8v-2 */
+.dZBnav{margin-bottom:0;}
+/* sc-component-id: layout__StyledLink-sc-1q48o6v-1 */
+.iLwMgH{box-shadow:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;}
+/* sc-component-id: layout__StyledH3-sc-1q48o6v-2 */
+.gCQMkg{margin-top:0;}
+/* sc-component-id: layout__Container-sc-1q48o6v-3 */
+.hsSGOy{margin:0 auto;max-width:42rem;padding:2.625rem 1.3125rem;font-family:Lato,PingFang SC,Microsoft YaHei,sans-serif;}
+/* sc-component-id: blog-post__Date-sc-7rm6jt-0 */
+.itkTeT{margin:0;font-size:0.875rem;}
+/* sc-component-id: blog-post__Line-sc-7rm6jt-1 */
+.guBkEQ{margin-bottom:1.75rem;}
+/* sc-component-id: blog-post__Ul-sc-7rm6jt-2 */
+.fBJedd{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;list-style:none;padding:0;}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-cc89bbc9aeb5b2be46c9.js"/><link as="script" rel="preload" href="/1-45b936232ae148a270d3.js"/><link as="script" rel="preload" href="/0-7e8d431324bae557f8b9.js"/><link as="script" rel="preload" href="/app-0b0e7ef74b4e2889141b.js"/><link as="script" rel="preload" href="/styles-9015553c21dea2bb7325.js"/><link as="script" rel="preload" href="/webpack-runtime-8a5d8af5dd7cbfe57a7a.js"/><link as="fetch" rel="preload" href="/static/d/599/path---notes-20180824143040-01-f-c15-CChSCHXv0M8a2aGoU0GgQaPi5L8.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="layout__Container-sc-1q48o6v-3 hsSGOy"><header><h3 class="layout__StyledH3-sc-1q48o6v-2 gCQMkg"><a class="layout__StyledLink-sc-1q48o6v-1 iLwMgH" href="/">William&#x27;s Blog</a></h3></header><main><h1>MVC、MVP、MVVM软件架构学习笔记</h1><p class="blog-post__Date-sc-7rm6jt-0 itkTeT">August 24, 2018</p><div><h2>前言</h2>
+<p>　　MVC、MVP和MVVM是开发GUI（图形用户界面）应用程序时常用的软件架构模式。它们的目的是通过一些手段将GUI应用程序的用户界面（View）和数据（Model）进行分离，提高代码的可复用性和可维护性。本文对三种架构模式的思想进行了深入研究并对比分析了它们的优缺点。</p>
+<h2>MVC</h2>
+<p>　　MVC模式将GUI应用程序分成三个模块：<strong>Model</strong>、<strong>View</strong>和<strong>Controller</strong>。这三个模块相互之间的交互如图1所示。</p>
+<div style="text-align: center;">
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/f03b3d6ce1bcbe2d105f5fbf2c673a1c/438a5/MVC.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 460px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 51.95652173913044%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABcSAAAXEgFnn9JSAAACUklEQVQoz3VSbUhTYRR+7t2HbrXAooTc0sY0xUGQ6cqM9TNCV35Mg9kcfaqkleWPyqAPRIjAJg7qZ/VjIO7eq+a0q9NNzY0+KHFF/aqQ8E8Q/TMiTu9du1KRLxze933OOc97zvMeTANQTFmLAJc+4l2MOAiN4+b4aTq7GKDzyftknj9FEHxPrTIZ1LhlZqYIIcT2GQWI/UO2BGQ1elo3IULbILg7DcN1yQL5TKJwoiXOzm8guru4EbIag/F1BGQoOZ/SHFPqKy/SZM8By6RG67P658tApMUay3YnpsMrKhjLNLqfAXYFS6jd5fUd0LBk7oEFhggP7+7rQSe761PO6Sj3uaoC1P6Qo8th7vu5BuBx+HfiN8rI7Y86ZB3fEs5EjgLtuVqm+evlwn7KZWRpDZY5+k91KSzxcVVrV2eyiGG61QBOqi1FyFmOgUsNELuO6kL7HRhqMql+pnF+FHAyK58FNqq4NnzciGCpA9KFagx3uPBoZwUGD5UAoutH1piHSqbbafOo5yee1BAnXfFpBikb8lebo2tgV2VL776DbYG91rtzxRj9YssUKQehm03myAmyTzTTjslmcsxcpPUjDSuAXEuGKQ8de9tLBXNthNk64qUbHZAomxc+FCFKVrykPCRoO8IrNohLhdoh2grx2knTnJeqF3qo9f09qlzoJo1cz7qXjnSzKvsZu18j1fghHg5wkidfbU3W6osjPO9j1jiuN1j+kMoCoarPOFzftyXs9euH6gIQKm+tNRmw9xiRHgc9G9gNTD/TayD1i0W310zDL3iT3um6cDwiAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="MVC交互示意图"
+        title=""
+        src="/static/f03b3d6ce1bcbe2d105f5fbf2c673a1c/438a5/MVC.png"
+        srcset="/static/f03b3d6ce1bcbe2d105f5fbf2c673a1c/d6ca3/MVC.png 148w,
+/static/f03b3d6ce1bcbe2d105f5fbf2c673a1c/8ec60/MVC.png 295w,
+/static/f03b3d6ce1bcbe2d105f5fbf2c673a1c/438a5/MVC.png 460w"
+        sizes="(max-width: 460px) 100vw, 460px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+</div>
+<div style="text-align: center;">图 1 MVC软件架构模式模块之间交互示意图</div>
+<p>　　对上述三个模块相互之间的交互描述如下: Model可以直接访问数据，其与View和Controller是独立的。Model自身并不关心其是如何被View显示和被Controller操作的，但是Model中数据发生变化后会以一种机制通知View，让View进行更新。为了实现这种机制，可以让相关View在Model上进行注册（或者订阅），当Model数据发生变动时，Model调用View提供的接口可以让对应的View知晓数据的变动。Controller的作用是组织Model和View，控制应用程序的流程。Controller接受来自View反馈的用户行为，然后根据用户行为操作Model引起数据的改变，进而触发View的更新。Controller也可以根据用户行为直接更新View。<br>
+　　以使用MVC模式开发一个传统的Web页面应用为例，Model、View和Controller的定义如下：<br>
+　　Model: 用于封装与Web页面应用的业务逻辑相关的数据以及对数据的处理方法。<br>
+　　View: 浏览器展示给用户的Web页面。<br>
+　　Controller: 转发请求或者对请求进行处理。<br>
+　　以JavaScript语言为例，使用MVC模式开发一个加减计数器实例如下：</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">/**
+ * 使用MVC架构模式实现一个加减计数器
+ * Model实现了对计数器count的封装
+ * View将count值展示到页面
+ * Controller处理用户动作
+ */</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Model</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>subscribers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">// 每次加1</span>
+    <span class="token function">addCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">// 每次减1</span>
+    <span class="token function">subCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token operator">--</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">// 读取count值</span>
+    <span class="token function">getCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">// 设置count值</span>
+    <span class="token function">setCount</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">=</span> value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">// 订阅数据变更</span>
+    <span class="token function">subscribe</span><span class="token punctuation">(</span>view<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>subscribers<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>view<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">// 发布通知</span>
+    <span class="token function">publish</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>subscribers<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>v <span class="token operator">=></span> v<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>controller<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>elText <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'#elText'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>elAdd <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'#elAdd'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>elSub <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'#elSub'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>controller <span class="token operator">=</span> controller<span class="token punctuation">;</span>
+        
+        <span class="token comment">// 绑定事件</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>elAdd<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token keyword">this</span><span class="token punctuation">.</span>controller<span class="token punctuation">.</span>handleAdd<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>elSub<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token keyword">this</span><span class="token punctuation">.</span>controller<span class="token punctuation">.</span>handleSub<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token function">render</span><span class="token punctuation">(</span>model<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>elText<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> model<span class="token punctuation">.</span><span class="token function">getCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Controller</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token keyword">this</span><span class="token punctuation">.</span>view <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">View</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token keyword">this</span><span class="token punctuation">.</span>model <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Model</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token comment">// 订阅model数据变更</span>
+       <span class="token keyword">this</span><span class="token punctuation">.</span>model<span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>view<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token function">handleAdd</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>model<span class="token punctuation">.</span><span class="token function">addCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 发布变更通知</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>model<span class="token punctuation">.</span><span class="token function">publish</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token function">handleSub</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>model<span class="token punctuation">.</span><span class="token function">subCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 发布变更通知</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>model<span class="token punctuation">.</span><span class="token function">publish</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 启动应用</span>
+<span class="token keyword">new</span> <span class="token class-name">Controller</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>　　MVC架构的应用使得复杂的GUI应用程序变得模块化，提高了应用程序的可复用性和可扩展性。MVC架构的应用也使得GUI应用的开发人员变得分工明确，开发人员可以根据自己的专长来从事Model、View或者Controller层面的开发，各个开发人员之间协商好接口之后便可以开始并行开发，从而提高了程序开发效率。虽然MVC架构模式具有上述优点，但是由于其View层和Controller层关联过于紧密，View和Controller一般一一对应，通常将两者打包成一个组件，并且在MVC模式中View层直接可以访问Model，这样可能会造成数据安全性问题。为了让Controller单独可复用以及View和Model进一步隔离，人们对MVC架构模式进行了改进，设计出了MVP这一软件架构模式。</p>
+<h2>MVP</h2>
+<p>　　MVP模式使用<strong>Presenter</strong>替换了MVC模式中的Controller，MVP架构模式中各个模块的交互如图2所示。</p>
+<div style="text-align: center;">
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/73e4c607f95fc7996f85c2027fc39942/ad191/MVP.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 16.382978723404253%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABcSAAAXEgFnn9JSAAAA/klEQVQI1wHzAAz/AACwUHwLs1eDDLNYhQCzUXhEcEgXuAcPPLUKETRKXU8VC7dccQ6zWYYQtFqECLdadz9qPxu6BQxJugQLRTJ/XBgAslJ5D7RZhQy0WIIAr0+BAADGVv842YH/OdyD/wDBVv8CsK5TALP/LQC1/y8ArMFHD79i/0bgjP9T45T/Echo/wCspVoAtv8sB63/LwCsqlMIxl//Xeab/1Xilf8AyFr/AACuTZEPtFqYErVcmQCwTo0zhl0ZvQIIRbgGC0JsWUMUAK9Kgxm3YJsfuWSZALBNjDx9Ux+9AQdMvQILPimEShYBslKNJbppmSS7aJcAr0+WhTNjd2h/7C4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="MVP架构模式模块之间交互示意图"
+        title=""
+        src="/static/73e4c607f95fc7996f85c2027fc39942/40fad/MVP.png"
+        srcset="/static/73e4c607f95fc7996f85c2027fc39942/707e9/MVP.png 148w,
+/static/73e4c607f95fc7996f85c2027fc39942/649e0/MVP.png 295w,
+/static/73e4c607f95fc7996f85c2027fc39942/40fad/MVP.png 590w,
+/static/73e4c607f95fc7996f85c2027fc39942/b3fef/MVP.png 885w,
+/static/73e4c607f95fc7996f85c2027fc39942/301c0/MVP.png 1180w,
+/static/73e4c607f95fc7996f85c2027fc39942/ad191/MVP.png 1410w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+</div>
+<div style="text-align: center;">图 2 MVP软件架构模式模块之间交互示意图</div>
+<p>　　在MVP架构模式中Model和View之间完全独立，Presenter作为中间协调器将两者联系起来。在MVP模式中，Model不知晓View的存在，View也不知晓Model的存在，数据的更新以及页面的刷新全部由Presenter来控制。<br>
+　　使用MVP架构模式对上述采用MVC架构的加减计数器代码进行重构，重构后的代码如下：</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">/**
+ * 使用MVP架构模式重构加减计数器
+ * Model实现了对计数器count的封装
+ * View将count值展示到页面
+ * Presenter负责数据的更新与View的刷新
+ */</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Model</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">// 每次加1</span>
+    <span class="token function">addCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">// 每次减1</span>
+    <span class="token function">subCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token operator">--</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">// 读取count值</span>
+    <span class="token function">getCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">// 设置count值</span>
+    <span class="token function">setCount</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">=</span> value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>elText <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'#elText'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>elAdd <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'#elAdd'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>elSub <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'#elSub'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>presenter <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Presenter</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 绑定事件</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>elAdd<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token keyword">this</span><span class="token punctuation">.</span>presenter<span class="token punctuation">.</span>handleAdd<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>elSub<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token keyword">this</span><span class="token punctuation">.</span>presenter<span class="token punctuation">.</span>handleSub<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token function">render</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>elText<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> data<span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Presenter</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>view<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>view <span class="token operator">=</span> view<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>model <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Model</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+   
+    <span class="token function">handleAdd</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 更新数据</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>model<span class="token punctuation">.</span><span class="token function">addCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 更新页面</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>view<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            value<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>model<span class="token punctuation">.</span><span class="token function">getCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token function">handleSub</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 更新数据</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>model<span class="token punctuation">.</span><span class="token function">subCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 更新页面</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>view<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            value<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>model<span class="token punctuation">.</span><span class="token function">getCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 启动应用</span>
+<span class="token keyword">new</span> <span class="token class-name">View</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>　　MVP模式与MVC模式相比，其优点在于Model层和View层完全独立，Presenter作为中间层保持View和Model之间的同步。在MVC和MVP模式中均存在一个问题: Controller和Presenter都需要直接或者间接地调用View提供的接口来对页面进行刷新。对于开发者来说，直接调用View接口来更新页面不仅增加了代码量，而且在某些场景下会频繁地操作DOM。如何解决这些问题？在MVP架构模式的基础上，人们引入数据绑定的概念，设计出了目前流行的MVVM软件架构模式。</p>
+<h2>MVVM</h2>
+<p>　　MVVM模式使用<strong>ViewModel</strong>替换了MVP模式中的Presenter，该模式下模块之间的交互如图3所示。</p>
+<div style="text-align: center;">
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/584efeed021db45dbba1c4480fa8e132/ad191/MVVM.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 16.382978723404253%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABcSAAAXEgFnn9JSAAAA+0lEQVQI12NgWOtVw7EptBmIWxk2+FU6VUjy3mBg0L3GwKDRbsvAwbApsJBhnW8bwzq/FobNgeVeuW7SO1l5PHexcLsa1cdIMGwKquTfEtnKsyWiiWG9fyOD0Ln0/053Ov57POz9z3I49j/r0k7HJqt420rnVBuWmdNNpA9m/je4Vfvf4EbNf6WzJf8Z1q2MYtj6X4d97X99hjWrgjmOxf+PfTb7f+ijqf8ZTkT9ZxDZFjdRdmfKDMVdaTM5N4X1MWysFWGAge0LeNk3hrbxbomcxbs5Yib71sges2o/+X2M7D57mbjtNFu8xBg3BfWq7sqcqbI7YzrQhdMAwHRfxrvnJFgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="MVVM交互示意图"
+        title=""
+        src="/static/584efeed021db45dbba1c4480fa8e132/40fad/MVVM.png"
+        srcset="/static/584efeed021db45dbba1c4480fa8e132/707e9/MVVM.png 148w,
+/static/584efeed021db45dbba1c4480fa8e132/649e0/MVVM.png 295w,
+/static/584efeed021db45dbba1c4480fa8e132/40fad/MVVM.png 590w,
+/static/584efeed021db45dbba1c4480fa8e132/b3fef/MVVM.png 885w,
+/static/584efeed021db45dbba1c4480fa8e132/301c0/MVVM.png 1180w,
+/static/584efeed021db45dbba1c4480fa8e132/ad191/MVVM.png 1410w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+</div>
+<div style="text-align: center;">图 3 MVVM软件架构模式模块之间交互示意图</div>
+<p>　　与Presenter调用View提供的接口进行页面刷新不同，ViewModel通过数据绑定的方式将View和ViewModel进行绑定，当用户操作页面时，ViewModel自动获取到页面的变动，并自动更新Model；当Model数据发生变动时，ViewModel获取到数据变动后自动更新View。数据绑定功能实现了View和Model的自动同步，开发人员尤其是前端工程师在开发GUI应用程序时不用再关心页面如何渲染以及页面渲染是否高效的问题，开发人员重点关注如何处理前端业务逻辑。<br>
+　　使用JavaScript语言的MVVM框架Vue.js对上述加减计数器进行重构，重构后的代码如下：</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">/**
+ * 使用Vue.js重构加减计数器
+ * Model是一个对象，保存了业务数据，在本例中就是count值
+ * View可以看做是Vue模板，通过Vue提供的相应的模板语法和ViewModel进行数据和事件的绑定
+ * ViewModel是一个Vue对象，数据绑定功能由Vue框架内部实现，开发者无需关心，只需关心业务逻辑即可
+ */</span>
+
+<span class="token keyword">const</span> model <span class="token operator">=</span> <span class="token punctuation">{</span>
+    count<span class="token punctuation">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span></code></pre></div>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html">// View
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>app<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>{{count}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>handleAdd<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>handleSub<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre></div>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// ViewModel</span>
+<span class="token keyword">const</span> viewModel <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    el<span class="token punctuation">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> model<span class="token punctuation">,</span>
+    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token function">handleAdd</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">handleSub</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
+<p>　　MVVM架构模式进一步提高了GUI应用程序的研发效率。为了实现数据绑定，部分MVVM框架可能会创建出很多观察器来对数据进行观察，对于数据结构复杂的GUI应用而言，数据绑定可能会占用大量的内存空间。</p>
+<h2>总结</h2>
+<p>　　MVC、MVP以及MVVM等MV*架构模式都是为了分离GUI应用程序的Model（数据）和View（界面）以提高研发效率和增强GUI应用程序可维护性而提出来的软件架构模式。它们之间的差异在于各个模块之间的耦合程度以及程序研发的关注点。了解不同架构模式的优缺点可以帮助我们在应对不同的业务需求时选择合适的软件架构模式，依靠某一种架构模式应对所有的业务场景是不合适的。</p>
+<h2>参考文献</h2>
+<ol>
+<li><a href="https://martinfowler.com/eaaDev/uiArchs.html">GUI Architectures</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/MVC">Wikipedia: MVC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter">Wikipedia: Model–view–presenter</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/MVVM">Wikipedia: MVVM</a></li>
+<li><a href="https://blogs.msdn.microsoft.com/johngossman/2006/03/04/advantages-and-disadvantages-of-m-v-vm/">MSDN: Advantages and disadvantages of M-V-VM</a></li>
+<li><a href="https://addyosmani.com/blog/understanding-mvvm-a-guide-for-javascript-developers/">Understanding MVVM - A Guide For JavaScript Developers</a></li>
+<li><a href="https://juejin.im/post/593021272f301e0058273468">掘金: 浅析前端开发中的 MVC/MVP/MVVM 模式</a></li>
+</ol></div><hr class="blog-post__Line-sc-7rm6jt-1 guBkEQ"/><div class="bio__Container-w4lf8v-0 jwJkRe"><div class="bio__StyledImage-w4lf8v-1 kiXwkj gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:80px;height:80px"><img src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDBAH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAcWrJw7AUk1RjRKgf//EABsQAAIDAQEBAAAAAAAAAAAAAAECAAMRMhIz/9oACAEBAAEFAlWCsCMMLW5LnYNsHV2lQnoN9LZVx//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPwFsYkmP/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERAhD/2gAIAQIBAT8B5R6dP//EABwQAAICAgMAAAAAAAAAAAAAAAABEBEhUWFxkf/aAAgBAQAGPwK2dxsSTwZObE3suzyf/8QAHhABAAICAgMBAAAAAAAAAAAAAQARITFB4WFxgbH/2gAIAQEAAT8h7yGiJV81ctSOkAPN8xEgDRgihoZ8zU9Ev4WcJVtWzb7jT6T9J//aAAwDAQACAAMAAAAQ38QO/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAwEBPxDkRgGUHL//xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAECAQE/EO2NtSAgb//EACAQAQACAgEEAwAAAAAAAAAAAAEAESExQVFhcaGBsfD/2gAIAQEAAT8QEqgrK8IAhQ0M/M5FrtUcaUScL9c6Lb0L0rzEywbLiRUJo6JQrxMsECCsvPqXB9q5mbc3+4aNcp7mvy+5/9k=" alt="William" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition:opacity 0.5s;transition-delay:0.25s;border-radius:50%;margin-bottom:0"/><noscript><picture><img width="80" height="80" srcset="/static/d8cfc41f70b8f5ee7de474fa18a178c1/added/profile-pic.jpg 1x,
+/static/d8cfc41f70b8f5ee7de474fa18a178c1/2d23b/profile-pic.jpg 1.5x,
+/static/d8cfc41f70b8f5ee7de474fa18a178c1/f9571/profile-pic.jpg 2x,
+/static/d8cfc41f70b8f5ee7de474fa18a178c1/390dc/profile-pic.jpg 3x" src="/static/d8cfc41f70b8f5ee7de474fa18a178c1/added/profile-pic.jpg" alt="William" style="position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p class="bio__Paragraph-w4lf8v-2 dZBnav">本博客作者 <strong>William</strong> 现任职于北京贝壳找房，从事web前端开发相关工作。<br/>您可以通过<a href="mailto:yanfangyao2014@icloud.com">Email</a>与他取得联系</p></div><ul class="blog-post__Ul-sc-7rm6jt-2 fBJedd"><li><a rel="prev" href="/notes/20180718144710/">← <!-- -->sourcemap学习笔记</a></li><li><a rel="next" href="/notes/20180920212719/">ECMAScript 5的严格模式<!-- --> →</a></li></ul></main><footer>© <!-- -->2019<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-111698174-1', 'auto', {});
+      
+      
+      
+      }
+      </script><script>
+                  var _hmt = _hmt || [];
+                  (function() {
+                      var hm = document.createElement("script");
+                      hm.src = "//hm.baidu.com/hm.js?02fa82985b3d8ddaab333fe7416b1bf2";
+                      var s = document.getElementsByTagName("script")[0]; 
+                      s.parentNode.insertBefore(hm, s);
+                  })();
+              </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"notes-20180824143040-01f","path":"/notes/20180824143040/"};window.dataPath="599/path---notes-20180824143040-01-f-c15-CChSCHXv0M8a2aGoU0GgQaPi5L8";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-0b0e7ef74b4e2889141b.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-1969167b6a1e70fd6be8.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-cc89bbc9aeb5b2be46c9.js"],"component---src-pages-404-js":["/component---src-pages-404-js-7b83b5a78a563ef4f16c.js"],"component---src-pages-index-js":["/component---src-pages-index-js-9cf9987aea4216fe0655.js"],"pages-manifest":["/pages-manifest-4102573875686233e3e9.js"]};/*]]>*/</script><script src="/webpack-runtime-8a5d8af5dd7cbfe57a7a.js" async=""></script><script src="/styles-9015553c21dea2bb7325.js" async=""></script><script src="/app-0b0e7ef74b4e2889141b.js" async=""></script><script src="/0-7e8d431324bae557f8b9.js" async=""></script><script src="/1-45b936232ae148a270d3.js" async=""></script><script src="/component---src-templates-blog-post-js-cc89bbc9aeb5b2be46c9.js" async=""></script></body></html>

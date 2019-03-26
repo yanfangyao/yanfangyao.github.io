@@ -1,0 +1,250 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.5e4a344fb0ad9e1a7e23.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-4124805c0503dbfe42dd67d7f5715964.woff2) format("woff2"),url(/static/montserrat-latin-100-c8fb2f714bbc7bc3e8dfffa916b286dc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e4bf47bd171a9b2a72dd84c58bf90edf.woff2) format("woff2"),url(/static/montserrat-latin-100italic-d1f3f2d02ee4d7d2d4b1ad865014f189.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-444ae007121264bc1969d49b4031f9b2.woff2) format("woff2"),url(/static/montserrat-latin-200-edbce16a90aa22c297a0307b85789837.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-f316c5d1ec40f3e68654c3f38b3999f3.woff2) format("woff2"),url(/static/montserrat-latin-200italic-d7bbb730d9b5e11720b3eb32326dcca7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-0a7c6df06e85d978d096d4d18fd8d43d.woff2) format("woff2"),url(/static/montserrat-latin-300-5e86df2cad22d2ef2b03516334afae5e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-c076c4892bc7a4be7b9097e97a35012d.woff2) format("woff2"),url(/static/montserrat-latin-300italic-37c74a8d2d0d36a0a2c6e9a37ee15b0c.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-501ce09c42716a2f6e1503a25eb174c9.woff2) format("woff2"),url(/static/montserrat-latin-400-f29d2b8559699b6beb5b29b25b8bc572.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-882908d9950d9c86ebd380877f293d95.woff2) format("woff2"),url(/static/montserrat-latin-400italic-22e7b04e5f2a901d49d4d342315a715a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-f0f2716c5fe401d175b88715e7d28685.woff2) format("woff2"),url(/static/montserrat-latin-500-991b453bf90a0980e78966d2af7e3d3a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-4590ebba421b3288c305305d7fa7b504.woff2) format("woff2"),url(/static/montserrat-latin-500italic-f3d41e4cdcc2314e49ddcea751d6f87f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-15c24f7109941777774ddd2c636c6a50.woff2) format("woff2"),url(/static/montserrat-latin-600-f6dc6096f48956908c1787d9a722570a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-6d10b80529d5c36c7c09fca7193af0fc.woff2) format("woff2"),url(/static/montserrat-latin-600italic-02c4833312d94b1b0866f073023a250e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-79982cd1f74c6fa7451bf9b37ead09ff.woff2) format("woff2"),url(/static/montserrat-latin-700-957e93fbbe131a59791cd820d98b7109.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-283438e9577fe6a684466bb100e105ec.woff2) format("woff2"),url(/static/montserrat-latin-700italic-ca627c5ccc65cf80c2ecaea44b997de9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-35386154b78d046218fc8f88a44ff515.woff2) format("woff2"),url(/static/montserrat-latin-800-756655905d91b77960888262e7d58d35.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-e1b52a7bd83e2324db6d92bdc206844c.woff2) format("woff2"),url(/static/montserrat-latin-800italic-a69f0add9d86c1a84311d7dd8693ba4a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-260c2ea3ef57feb82251952e605a36d5.woff2) format("woff2"),url(/static/montserrat-latin-900-186cae8091da578150d81958e217714a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-d785fb9fc74588ffb7f306799709a97d.woff2) format("woff2"),url(/static/montserrat-latin-900italic-43b527fe77254f97ea36e2b54e845ec4.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-a50c381443e6993188ed9cc4b6806866.woff2) format("woff2"),url(/static/merriweather-latin-300-2c73b119ad85e697123658b8a091ff83.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-bd410cbf8c272acd4fbdd9f61a7015bf.woff2) format("woff2"),url(/static/merriweather-latin-300italic-9deeb422b65afb1daacc039296bb3640.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-f936cb550d4dcd769f75c453207ac5e6.woff2) format("woff2"),url(/static/merriweather-latin-400-ab0616e6d856817eff54eb8c5e1664e4.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-5c9a23d08e2c851e5a25795b940acd4f.woff2) format("woff2"),url(/static/merriweather-latin-400italic-0ab4b54f3b1e8b14cf755970fde8ce35.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-1636f13a52ca3f0eb8784c9c57f62082.woff2) format("woff2"),url(/static/merriweather-latin-700-cc673c945b482dc1378d4a3c95ffd175.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-8b0db67123584893c6591accbc51640c.woff2) format("woff2"),url(/static/merriweather-latin-700italic-513649f5b9ba4675cff15cf3f7ad4f2a.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-46631a9aab93dec3ed34f429dd1a5646.woff2) format("woff2"),url(/static/merriweather-latin-900-a0528570caa2c785891308ce604d8db7.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-a26a8168916e5d4e5485081171d7fdb0.woff2) format("woff2"),url(/static/merriweather-latin-900italic-db42a3f34378e69ef5aebb6717f1f33e.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:100;src:local("Lato Thin "),local("Lato-Thin"),url(/static/lato-latin-100-f8028e61362a54aa64dcb26e8063d0d7.woff2) format("woff2"),url(/static/lato-latin-100-752c20224144760a496fb9e19a62f616.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:100;src:local("Lato Thin italic"),local("Lato-Thinitalic"),url(/static/lato-latin-100italic-ef884f11c6adb5df51c446911612e7af.woff2) format("woff2"),url(/static/lato-latin-100italic-6ea8380326f67e10380953b188d96a2b.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:300;src:local("Lato Light "),local("Lato-Light"),url(/static/lato-latin-300-bbbd26aeee9c5b967e35933bce02d358.woff2) format("woff2"),url(/static/lato-latin-300-ba2452bdc790a4fee05202eac3c092b3.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:300;src:local("Lato Light italic"),local("Lato-Lightitalic"),url(/static/lato-latin-300italic-7d718d7299ab7f9fab17d7d4f13ded57.woff2) format("woff2"),url(/static/lato-latin-300italic-06eb177ee6c1960bcd79f1cf8c812000.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:400;src:local("Lato Regular "),local("Lato-Regular"),url(/static/lato-latin-400-f1a4a058fbba1e35a406188ae7eddaf8.woff2) format("woff2"),url(/static/lato-latin-400-62fb51e9e645f63599238881b9de15dd.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:400;src:local("Lato Regular italic"),local("Lato-Regularitalic"),url(/static/lato-latin-400italic-b45e52f342dc29c8553f51a99f924871.woff2) format("woff2"),url(/static/lato-latin-400italic-c4082958a18f04bd32a3d3e1f5e390a5.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:700;src:local("Lato Bold "),local("Lato-Bold"),url(/static/lato-latin-700-7fbbfd1610770d594aef639cfefdd0b0.woff2) format("woff2"),url(/static/lato-latin-700-96759e32fdc800c78b527a3e53fe2be6.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:700;src:local("Lato Bold italic"),local("Lato-Bolditalic"),url(/static/lato-latin-700italic-c66215e09d2420885ad1a1f3eb2bac37.woff2) format("woff2"),url(/static/lato-latin-700italic-0a06ba1bdf385495f2679324cfbedd13.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:900;src:local("Lato Black "),local("Lato-Black"),url(/static/lato-latin-900-f2de2c6ec69b0c11f1bc44c5348c2f35.woff2) format("woff2"),url(/static/lato-latin-900-d79dd0661ba130ec7a7e7c060fcb7e09.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:900;src:local("Lato Black italic"),local("Lato-Blackitalic"),url(/static/lato-latin-900italic-fd67cf72cde7716bdadf8a3992b37fa2.woff2) format("woff2"),url(/static/lato-latin-900italic-e792d6c62329e025ca1cbea793ba8de5.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}pre[class*=language-].line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}pre[class*=language-].line-numbers>code{position:relative;white-space:inherit}.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:0;font-size:100%;left:-3.8em;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}</style><meta name="generator" content="Gatsby 2.1.18"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#fff"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png"/><title data-react-helmet="true">现代浏览器的工作原理（一） | William&#x27;s Blog</title><meta data-react-helmet="true" name="description" content="了解浏览器的工作原理是一名前端开发工程师构的必修课。最近，笔者在工作之余，细心研读了以色列开发人员Tali Garsiel针对现代浏览器工作原理的研究成果以及html5标准文档等相关内容，并将自己的心得体会在博客中以笔记的形式记录下来。这篇博文是整个笔记的第一部分，主要对现代浏览器的组成进行介绍。"/><meta data-react-helmet="true" property="og:title" content="现代浏览器的工作原理（一）"/><meta data-react-helmet="true" property="og:description" content="了解浏览器的工作原理是一名前端开发工程师构的必修课。最近，笔者在工作之余，细心研读了以色列开发人员Tali Garsiel针对现代浏览器工作原理的研究成果以及html5标准文档等相关内容，并将自己的心得体会在博客中以笔记的形式记录下来。这篇博文是整个笔记的第一部分，主要对现代浏览器的组成进行介绍。"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="William"/><meta data-react-helmet="true" name="twitter:title" content="现代浏览器的工作原理（一）"/><meta data-react-helmet="true" name="twitter:description" content="了解浏览器的工作原理是一名前端开发工程师构的必修课。最近，笔者在工作之余，细心研读了以色列开发人员Tali Garsiel针对现代浏览器工作原理的研究成果以及html5标准文档等相关内容，并将自己的心得体会在博客中以笔记的形式记录下来。这篇博文是整个笔记的第一部分，主要对现代浏览器的组成进行介绍。"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;font-family:PingFang SC,Helvetica Neue,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Helvetica,Arial,Verdana,sans-serif;
+;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}.gatsby-highlight-code-line{background-color:#feb;display:block;margin-right:-1em;margin-left:-1em;padding-right:1em;padding-left:0.75em;border-left:0.25em solid #f99;color:rgba(0, 0, 0, .9);}.gatsby-highlight-code-line .token.punctuation{color:rgba(0, 0, 0, .9);}.gatsby-highlight{background-color:#2d2d2d;border-radius:0.3em;margin:0.5em 0;padding:1em;overflow:auto;}.gatsby-highlight pre[class*="language-"]{background-color:transparent;margin:0;padding:0;overflow:initial;float:left;min-width:100%;}.gatsby-highlight pre[class*="language-"].line-numbers{padding-left:2.8em;}</style><style data-styled="hsSGOy gCQMkg iLwMgH itkTeT guBkEQ jwJkRe kiXwkj dZBnav fBJedd" data-styled-version="4.1.3">
+/* sc-component-id: bio__Container-w4lf8v-0 */
+.jwJkRe{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:5.25rem;}
+/* sc-component-id: bio__StyledImage-w4lf8v-1 */
+.kiXwkj{margin-right:0.875rem;margin-bottom:0;min-width:50;border-radius:100%;-webkit-flex:none;-ms-flex:none;flex:none;}
+/* sc-component-id: bio__Paragraph-w4lf8v-2 */
+.dZBnav{margin-bottom:0;}
+/* sc-component-id: layout__StyledLink-sc-1q48o6v-1 */
+.iLwMgH{box-shadow:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;}
+/* sc-component-id: layout__StyledH3-sc-1q48o6v-2 */
+.gCQMkg{margin-top:0;}
+/* sc-component-id: layout__Container-sc-1q48o6v-3 */
+.hsSGOy{margin:0 auto;max-width:42rem;padding:2.625rem 1.3125rem;font-family:Lato,PingFang SC,Microsoft YaHei,sans-serif;}
+/* sc-component-id: blog-post__Date-sc-7rm6jt-0 */
+.itkTeT{margin:0;font-size:0.875rem;}
+/* sc-component-id: blog-post__Line-sc-7rm6jt-1 */
+.guBkEQ{margin-bottom:1.75rem;}
+/* sc-component-id: blog-post__Ul-sc-7rm6jt-2 */
+.fBJedd{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;list-style:none;padding:0;}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-cc89bbc9aeb5b2be46c9.js"/><link as="script" rel="preload" href="/1-45b936232ae148a270d3.js"/><link as="script" rel="preload" href="/0-7e8d431324bae557f8b9.js"/><link as="script" rel="preload" href="/app-0b0e7ef74b4e2889141b.js"/><link as="script" rel="preload" href="/styles-9015553c21dea2bb7325.js"/><link as="script" rel="preload" href="/webpack-runtime-8a5d8af5dd7cbfe57a7a.js"/><link as="fetch" rel="preload" href="/static/d/462/path---notes-20180412215709-d-15-347-VCSFly2A3lvjKkBiJAxTIIicg.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="layout__Container-sc-1q48o6v-3 hsSGOy"><header><h3 class="layout__StyledH3-sc-1q48o6v-2 gCQMkg"><a class="layout__StyledLink-sc-1q48o6v-1 iLwMgH" href="/">William&#x27;s Blog</a></h3></header><main><h1>现代浏览器的工作原理（一）</h1><p class="blog-post__Date-sc-7rm6jt-0 itkTeT">April 12, 2018</p><div><h2>前言</h2>
+<p>　　了解浏览器的工作原理是一名前端开发工程师构的必修课。最近，笔者在工作之余，细心研读了以色列开发人员Tali Garsiel针对现代浏览器工作原理的<a href="https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">研究成果</a>以及<a href="https://www.w3.org/TR/html5/syntax.html">html5标准文档</a>等相关内容，并将自己的心得体会以学习笔记的形式记录下来。</p>
+<h2>现代浏览器的组成结构</h2>
+<p>　　现代浏览器的组成可由图1表示：</p>
+<div style="text-align: center;">
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/5cfc2e36041f396281ff53391529a8b4/260bc/browser_components.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 450px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 67.77777777777777%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAADtElEQVQ4y12Sa2hbZRzGzwZC5xUv2E2mZkMUp6BuflC/+EGLyBCFybpPKu6DoJ9U1lEYfhjqWk3aLC10M66d13YromtssizZmpzcmiZNcpJzTtO0uZ80za3LPW1uj+9pOoT94eHP+39efjzvhSpZLG81WF+6wbGxBsvGmxwrkC5UPR6hyjCJstsldqEhzjse2cMltxhPoEDT3RSpllH+TZtVXW+u0v1UWTXzMQLLAOMBvAzg8wIeN9q0EaAN2Lx1EzCbiOft+KKID7sNBdXsgW2gadSL/CKaEbufSg+ek5QUw/1lhbxPVImoeH64r6qQn4pPTF6sjCpOV0bOb8+JTlfksq8y45flqfGJgcrAQFcHOGJC1CAC7dRfwL0W4LANeMVKNE/EEvmAl69FWx+R3EfueESHHcChX1a2XvqaxyPUThGgBQmzCHRShvVybwxAoAWs7PTFXBXufB2OTBmujRoC7f+9KOm61Q35xKTrGaUx23VBefW+zTm5pe3XohVZcFJ/REvHtGVgJtNsq7JtsWMymMOVSB5ToQ38uZolsxY6XgvqIvCbJ628MO37YEwVeHNsevHVys0hc8F1De0oAfbqXV3v0uyBtw1eSc+cV/IOzUmOs2nJ+961p781J46f8KUO9hh9kh7iHzWwB/fdsncP6iIv/G1M7r9z5BpJWGFUJCE5ctKZfCAdyH+XDZWGs8GiNBsqSnOhkmwjXJKG+du/5sJlGVlLRS9DVIiUpHZHqu+Hf4JPibA12Xu7SUJL0b2T0GNJPFtNAY0NoJkHNrNA3F9BIlBDjC8iypdQSAAt4m3lyAWS63HYUu5Px7nHRGDkdWqXmLDOqdESgTZNYO+8Nma26wTPgjZunNfEjVZ1xERkNavDjFkVNM1rYrT9etxARDv1CVbzb3RMrk8+KQL3UdSu7VcWTJ1X7tTZPW+cnJFQd9WpS9yhu2cnzuqee/EL4/7He/WPiutzR6jdBGhGnBaBC1QZocFMPTi0Vg3+nG8tfa73Bu5fEhr9nlBZZuFyY1ysNsQJzQ/3kiR+v/8MH4goueXwyNJy8Cee549t/0PzqAMpm/htGKqIJazXXSiCh1CzFjQM97yP3Jkr1MCcax3hArAQhOGzT44+KAgCIpEweI5DPn8bHoaxicA6rVA1udnG1qpZRXGlaY4rTjvZ/NUlvjw1fdmw0D1lqs4pZ6O+i6qwc0KbXL1irX//2sPUPVrtDZNOp/OR7tTr9StqtfpHEei49OVD7t/PPKGRntzzHxyNCv+kOv/WAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="现代浏览器组成"
+        title=""
+        src="/static/5cfc2e36041f396281ff53391529a8b4/260bc/browser_components.png"
+        srcset="/static/5cfc2e36041f396281ff53391529a8b4/0c6a5/browser_components.png 148w,
+/static/5cfc2e36041f396281ff53391529a8b4/9f78f/browser_components.png 295w,
+/static/5cfc2e36041f396281ff53391529a8b4/260bc/browser_components.png 450w"
+        sizes="(max-width: 450px) 100vw, 450px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+</div>
+<div style="text-align: center;">图 1 现代浏览器的组成结构（图片摘自Tali Garsiel的研究成果）</div>
+<p>　　图1中包含的现代浏览器各组件的功能如下：<br>
+　　1. <strong>User Interface(用户界面)</strong>：浏览器的用户界面通常包含地址栏、前进/后退按钮以及书签栏等。除了用来展示用户请求的页面内容的窗口外，浏览器其他部分均属于用户界面。<br>
+　　2. <strong>Browser engine(浏览器引擎)</strong>：在用户界面和呈现引擎之间传送指令。<br>
+　　3. <strong>Rendering engine(呈现引擎)</strong>：呈现引擎的作用是呈现用户请求的web资源。如用户请求的资源是html文档，则呈现引擎负责解析html以及css，然后将渲染出的页面展示在浏览器窗口。<br>
+　　4. <strong>Networking(网络模块)</strong>：实现网络调用，如http请求。该模块提供了一个跨平台的通用接口。<br>
+　　5. <strong>UI backend(用户界面后端)</strong>：用户界面后端被用来绘制基本组件如组合框和窗口，其向外部暴露了一个跨平台的通用接口，它的底层使用了操作系统的用户界面方法。<br>
+　　6. <strong>JavaScript interpreter(JavaScript解释器)</strong>：用来解析和执行JavaScript。<br>
+　　7. <strong>Data storage(数据存储)</strong>：数据存储属于浏览器的持久层。浏览器可能需要在本地保存数据，如cookies，同时浏览器支持各种存储机制，如localStorage、IndexDB、WebSQL以及FileSystem。</p>
+<h2>浏览器的呈现引擎</h2>
+<p>　　呈现引擎默认可以解析html文档、xml文档以及图片等资源并将解析后的内容展示给用户。通过各种插件（浏览器扩展程序）浏览器还可以展示其他各类型的web资源，如pdf插件可以让浏览器展示pdf文档。不同浏览器使用的呈现引擎也不一样，目前主流的呈现引擎有<a href="https://webkit.org/">Webkit</a>、<a href="https://www.chromium.org/blink">Blink</a>(Webkit的一个分支)、<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Gecko">Gecko</a>、<a href="https://en.wikipedia.org/wiki/Trident_layout_engine">Trident</a>、<a href="https://en.wikipedia.org/wiki/EdgeHTML">EdgeHTML</a>(Trident的一个分支)。主流浏览器使用的呈现引擎如表1所示。</p>
+<div style="text-align: center;">表 1 主流浏览器所使用的呈现引擎</div>
+<table>
+<thead>
+<tr>
+<th align="center">浏览器</th>
+<th align="center">呈现引擎</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Chrome</td>
+<td align="center">Blink（Chrome 28+）、Webkit（Chrome 27-）</td>
+</tr>
+<tr>
+<td align="center">Safari</td>
+<td align="center">Webkit</td>
+</tr>
+<tr>
+<td align="center">Firefox</td>
+<td align="center">Gecko</td>
+</tr>
+<tr>
+<td align="center">Edge</td>
+<td align="center">EdgeHTML</td>
+</tr>
+<tr>
+<td align="center">IE</td>
+<td align="center">Trident</td>
+</tr>
+</tbody>
+</table>
+<h3>呈现引擎的主流程</h3>
+<p>　　当网络模块下载完用户请求的html文档之后，呈现引擎会按照图2所示的流程来解析和呈现html文档中的内容。</p>
+<div style="text-align: center;">
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/59390444fc54097acc6074013c028e3a/7c8cd/render_engine_main_flow.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 12.486187845303867%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABcSAAAXEgFnn9JSAAAAoklEQVQI12NgaNniypDeq8GQ1KbH3LnH0n3NWzHWtW/UGTr3qDNWLFFhmH9TTWb1K0X5lc+B7BsqDHVrVBnatitxrnurabL4vizj6peaDA3rlBjq16oxLLory8CQ3qPHyMCgygDE/JVLdfxnXQmXWvZYAciXZGFgUGKQVeO1W3DHyX7eDT+gGBdQDCQnpLb0kabHrMsxnNPPSwH54kCsCMSsAFeOL9h+85V2AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="呈现引擎的主要流程"
+        title=""
+        src="/static/59390444fc54097acc6074013c028e3a/40fad/render_engine_main_flow.png"
+        srcset="/static/59390444fc54097acc6074013c028e3a/707e9/render_engine_main_flow.png 148w,
+/static/59390444fc54097acc6074013c028e3a/649e0/render_engine_main_flow.png 295w,
+/static/59390444fc54097acc6074013c028e3a/40fad/render_engine_main_flow.png 590w,
+/static/59390444fc54097acc6074013c028e3a/b3fef/render_engine_main_flow.png 885w,
+/static/59390444fc54097acc6074013c028e3a/301c0/render_engine_main_flow.png 1180w,
+/static/59390444fc54097acc6074013c028e3a/b5a53/render_engine_main_flow.png 1770w,
+/static/59390444fc54097acc6074013c028e3a/7c8cd/render_engine_main_flow.png 1810w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+</div>
+<div style="text-align: center;">图 2 浏览器呈现引擎的主要流程</div>
+<p>　　图2所示的流程是一个渐进式的流程。为了更好的用户体验，呈现引擎不会等到html文档解析完毕之后再去构建和布局呈现树，而是采用类似流水线式的方式，边解析边呈现。</p>
+<h3>Webkit和Gecko的主要流程对比</h3>
+<p>　　Webkit和Gecko的流程图分别如图3和图4所示：</p>
+<div style="text-align: center;">
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/45d5c6c67be54d534928d87334312999/5cdc3/webkit_main_flow.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 500px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 46.4%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAACPElEQVQoz2M4d46R+eoVBuaepVWME9cdYPn//z8jAwMDW2/DnHnz+tf9n9Sy8ICvW5gEUIxhxuaDbDP3XwTJM8w+eJGBZNBdvyGagaGaGV0caBgjTk1nzjDGX7nMkN+7rMxg9sErxbP2nY5gYEhh3nR0Y+DqQ6tq9pzfmqgo78i84OjllCUnriyduf+8FkjfklM3WJafu83UtvEhw9OXbIwv3wowPXouzMhw8ybT4ds3GQ52Lm0PnXvg3JfZ+09tTGxdJnfw/MaLe48v/XPsypaZIAPmHbnSNvfwpftT9t3QJcGT6qwgctul03yLj57z6N18Knb6vsvqILHJy+Ypt8xd7Hrq6jqFqkUHOFdduq+/8sJdw7aNL7ifvuRQfP1B0PTRcxFVhv//GZhev2JgnrS+mOnF///g8Jqx/5L9stM3/q+5dPf/wmNXd9bOXm657+yG/1ce7fu/6/Tm6REdeyyWn7n2f/GJq/97Nu1JfPaC8dS7D5z/Hz/nv4nVnfeABjdtvqNctOSKWcuuV0Lbjq0RPXRxi+22I6ssgQbyONWdZl504prugmOXdatXPOe++4hb7t4TEcNbDyUUGY6cU5148pLs+pmbswPnHbm1etHxS0tjW1bJHr24rn/PyVWHj13dVk5S0nj5mv3/jdscP+ftyA2etuvC0hl7TsyYunGr3cHzGw5uO7Tk7JGrO6NA6o5c3sK6+eAKpt1nNjFE9Z9iWHr6JtPiU9eYqld+ZLj/mJvx8QsRpjuPJBgBhcQb7VIb9WoAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="webkit的主要流程"
+        title=""
+        src="/static/45d5c6c67be54d534928d87334312999/5cdc3/webkit_main_flow.png"
+        srcset="/static/45d5c6c67be54d534928d87334312999/770e1/webkit_main_flow.png 148w,
+/static/45d5c6c67be54d534928d87334312999/80002/webkit_main_flow.png 295w,
+/static/45d5c6c67be54d534928d87334312999/5cdc3/webkit_main_flow.png 500w"
+        sizes="(max-width: 500px) 100vw, 500px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+</div>
+<div style="text-align: center;">图 3 Webkit的主要流程（图片摘自Tali Garsiel的研究成果）</div><br>
+<div style="text-align: center;">
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/8044d900d97479907ad635861768fa5f/adc74/gecko_main_flow.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 500px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 46.4%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEAMQAAAB3FWwJGJ//8QAGBABAQADAAAAAAAAAAAAAAAAAAIRITH/2gAIAQEAAQUCbZUnj//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAECAQE/ASf/xAAYEAACAwAAAAAAAAAAAAAAAAAAICExMv/aAAgBAQAGPwLRBSf/xAAdEAABBAIDAAAAAAAAAAAAAAABABEhMRBBUYGR/9oACAEBAAE/IS708QIQEA6TuSv2M/8A/9oADAMBAAIAAwAAABBzz//EABcRAAMBAAAAAAAAAAAAAAAAAAEQETH/2gAIAQMBAT8QOxf/xAAXEQEBAQEAAAAAAAAAAAAAAAABABFR/9oACAECAQE/EFpI9v/EABwQAQACAQUAAAAAAAAAAAAAAAEAETEQIUFxkf/aAAgBAQABPxBGlFJswQM5AKSDA1+TPDH26f/Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="gecko的主要流程"
+        title=""
+        src="/static/8044d900d97479907ad635861768fa5f/adc74/gecko_main_flow.jpg"
+        srcset="/static/8044d900d97479907ad635861768fa5f/e40b4/gecko_main_flow.jpg 148w,
+/static/8044d900d97479907ad635861768fa5f/ead33/gecko_main_flow.jpg 295w,
+/static/8044d900d97479907ad635861768fa5f/adc74/gecko_main_flow.jpg 500w"
+        sizes="(max-width: 500px) 100vw, 500px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+</div>
+<div style="text-align: center;">图 4 Gecko的主要流程（图片摘自Tali Garsiel的研究成果）</div>
+<p>　　从图3和图4可以看出，Webkit和Gecko的主要流程除了部分术语不同之外，逻辑基本一致。</p>
+<h2>参考文献</h2>
+<ol>
+<li><a href="https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">Html5rocks: How Browsers Work: Behind the scenes of modern web browsers</a></li>
+<li><a href="https://www.w3.org/TR/html5/syntax.html">HTML: The HTML syntax</a></li>
+<li><a href="https://www.zybuluo.com/yangfch3/note/671516">浏览器内核、JS 引擎、页面呈现原理及其优化</a></li>
+</ol></div><hr class="blog-post__Line-sc-7rm6jt-1 guBkEQ"/><div class="bio__Container-w4lf8v-0 jwJkRe"><div class="bio__StyledImage-w4lf8v-1 kiXwkj gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:80px;height:80px"><img src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDBAH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAcWrJw7AUk1RjRKgf//EABsQAAIDAQEBAAAAAAAAAAAAAAECAAMRMhIz/9oACAEBAAEFAlWCsCMMLW5LnYNsHV2lQnoN9LZVx//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPwFsYkmP/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERAhD/2gAIAQIBAT8B5R6dP//EABwQAAICAgMAAAAAAAAAAAAAAAABEBEhUWFxkf/aAAgBAQAGPwK2dxsSTwZObE3suzyf/8QAHhABAAICAgMBAAAAAAAAAAAAAQARITFB4WFxgbH/2gAIAQEAAT8h7yGiJV81ctSOkAPN8xEgDRgihoZ8zU9Ev4WcJVtWzb7jT6T9J//aAAwDAQACAAMAAAAQ38QO/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAwEBPxDkRgGUHL//xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAECAQE/EO2NtSAgb//EACAQAQACAgEEAwAAAAAAAAAAAAEAESExQVFhcaGBsfD/2gAIAQEAAT8QEqgrK8IAhQ0M/M5FrtUcaUScL9c6Lb0L0rzEywbLiRUJo6JQrxMsECCsvPqXB9q5mbc3+4aNcp7mvy+5/9k=" alt="William" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition:opacity 0.5s;transition-delay:0.25s;border-radius:50%;margin-bottom:0"/><noscript><picture><img width="80" height="80" srcset="/static/d8cfc41f70b8f5ee7de474fa18a178c1/added/profile-pic.jpg 1x,
+/static/d8cfc41f70b8f5ee7de474fa18a178c1/2d23b/profile-pic.jpg 1.5x,
+/static/d8cfc41f70b8f5ee7de474fa18a178c1/f9571/profile-pic.jpg 2x,
+/static/d8cfc41f70b8f5ee7de474fa18a178c1/390dc/profile-pic.jpg 3x" src="/static/d8cfc41f70b8f5ee7de474fa18a178c1/added/profile-pic.jpg" alt="William" style="position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p class="bio__Paragraph-w4lf8v-2 dZBnav">本博客作者 <strong>William</strong> 现任职于北京贝壳找房，从事web前端开发相关工作。<br/>您可以通过<a href="mailto:yanfangyao2014@icloud.com">Email</a>与他取得联系</p></div><ul class="blog-post__Ul-sc-7rm6jt-2 fBJedd"><li><a rel="prev" href="/notes/20180411213829/">← <!-- -->querySelector/querySelectorAll遍历元素的顺序</a></li><li><a rel="next" href="/tips/20180422162446/">解决移动端网页开发“滚动穿透”问题<!-- --> →</a></li></ul></main><footer>© <!-- -->2019<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-111698174-1', 'auto', {});
+      
+      
+      
+      }
+      </script><script>
+                  var _hmt = _hmt || [];
+                  (function() {
+                      var hm = document.createElement("script");
+                      hm.src = "//hm.baidu.com/hm.js?02fa82985b3d8ddaab333fe7416b1bf2";
+                      var s = document.getElementsByTagName("script")[0]; 
+                      s.parentNode.insertBefore(hm, s);
+                  })();
+              </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"notes-20180412215709-d15","path":"/notes/20180412215709/"};window.dataPath="462/path---notes-20180412215709-d-15-347-VCSFly2A3lvjKkBiJAxTIIicg";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-0b0e7ef74b4e2889141b.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-1969167b6a1e70fd6be8.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-cc89bbc9aeb5b2be46c9.js"],"component---src-pages-404-js":["/component---src-pages-404-js-7b83b5a78a563ef4f16c.js"],"component---src-pages-index-js":["/component---src-pages-index-js-9cf9987aea4216fe0655.js"],"pages-manifest":["/pages-manifest-4102573875686233e3e9.js"]};/*]]>*/</script><script src="/webpack-runtime-8a5d8af5dd7cbfe57a7a.js" async=""></script><script src="/styles-9015553c21dea2bb7325.js" async=""></script><script src="/app-0b0e7ef74b4e2889141b.js" async=""></script><script src="/0-7e8d431324bae557f8b9.js" async=""></script><script src="/1-45b936232ae148a270d3.js" async=""></script><script src="/component---src-templates-blog-post-js-cc89bbc9aeb5b2be46c9.js" async=""></script></body></html>

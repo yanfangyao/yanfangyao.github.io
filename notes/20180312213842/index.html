@@ -1,0 +1,272 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.5e4a344fb0ad9e1a7e23.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-4124805c0503dbfe42dd67d7f5715964.woff2) format("woff2"),url(/static/montserrat-latin-100-c8fb2f714bbc7bc3e8dfffa916b286dc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e4bf47bd171a9b2a72dd84c58bf90edf.woff2) format("woff2"),url(/static/montserrat-latin-100italic-d1f3f2d02ee4d7d2d4b1ad865014f189.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-444ae007121264bc1969d49b4031f9b2.woff2) format("woff2"),url(/static/montserrat-latin-200-edbce16a90aa22c297a0307b85789837.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-f316c5d1ec40f3e68654c3f38b3999f3.woff2) format("woff2"),url(/static/montserrat-latin-200italic-d7bbb730d9b5e11720b3eb32326dcca7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-0a7c6df06e85d978d096d4d18fd8d43d.woff2) format("woff2"),url(/static/montserrat-latin-300-5e86df2cad22d2ef2b03516334afae5e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-c076c4892bc7a4be7b9097e97a35012d.woff2) format("woff2"),url(/static/montserrat-latin-300italic-37c74a8d2d0d36a0a2c6e9a37ee15b0c.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-501ce09c42716a2f6e1503a25eb174c9.woff2) format("woff2"),url(/static/montserrat-latin-400-f29d2b8559699b6beb5b29b25b8bc572.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-882908d9950d9c86ebd380877f293d95.woff2) format("woff2"),url(/static/montserrat-latin-400italic-22e7b04e5f2a901d49d4d342315a715a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-f0f2716c5fe401d175b88715e7d28685.woff2) format("woff2"),url(/static/montserrat-latin-500-991b453bf90a0980e78966d2af7e3d3a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-4590ebba421b3288c305305d7fa7b504.woff2) format("woff2"),url(/static/montserrat-latin-500italic-f3d41e4cdcc2314e49ddcea751d6f87f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-15c24f7109941777774ddd2c636c6a50.woff2) format("woff2"),url(/static/montserrat-latin-600-f6dc6096f48956908c1787d9a722570a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-6d10b80529d5c36c7c09fca7193af0fc.woff2) format("woff2"),url(/static/montserrat-latin-600italic-02c4833312d94b1b0866f073023a250e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-79982cd1f74c6fa7451bf9b37ead09ff.woff2) format("woff2"),url(/static/montserrat-latin-700-957e93fbbe131a59791cd820d98b7109.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-283438e9577fe6a684466bb100e105ec.woff2) format("woff2"),url(/static/montserrat-latin-700italic-ca627c5ccc65cf80c2ecaea44b997de9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-35386154b78d046218fc8f88a44ff515.woff2) format("woff2"),url(/static/montserrat-latin-800-756655905d91b77960888262e7d58d35.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-e1b52a7bd83e2324db6d92bdc206844c.woff2) format("woff2"),url(/static/montserrat-latin-800italic-a69f0add9d86c1a84311d7dd8693ba4a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-260c2ea3ef57feb82251952e605a36d5.woff2) format("woff2"),url(/static/montserrat-latin-900-186cae8091da578150d81958e217714a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-d785fb9fc74588ffb7f306799709a97d.woff2) format("woff2"),url(/static/montserrat-latin-900italic-43b527fe77254f97ea36e2b54e845ec4.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-a50c381443e6993188ed9cc4b6806866.woff2) format("woff2"),url(/static/merriweather-latin-300-2c73b119ad85e697123658b8a091ff83.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-bd410cbf8c272acd4fbdd9f61a7015bf.woff2) format("woff2"),url(/static/merriweather-latin-300italic-9deeb422b65afb1daacc039296bb3640.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-f936cb550d4dcd769f75c453207ac5e6.woff2) format("woff2"),url(/static/merriweather-latin-400-ab0616e6d856817eff54eb8c5e1664e4.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-5c9a23d08e2c851e5a25795b940acd4f.woff2) format("woff2"),url(/static/merriweather-latin-400italic-0ab4b54f3b1e8b14cf755970fde8ce35.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-1636f13a52ca3f0eb8784c9c57f62082.woff2) format("woff2"),url(/static/merriweather-latin-700-cc673c945b482dc1378d4a3c95ffd175.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-8b0db67123584893c6591accbc51640c.woff2) format("woff2"),url(/static/merriweather-latin-700italic-513649f5b9ba4675cff15cf3f7ad4f2a.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-46631a9aab93dec3ed34f429dd1a5646.woff2) format("woff2"),url(/static/merriweather-latin-900-a0528570caa2c785891308ce604d8db7.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-a26a8168916e5d4e5485081171d7fdb0.woff2) format("woff2"),url(/static/merriweather-latin-900italic-db42a3f34378e69ef5aebb6717f1f33e.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:100;src:local("Lato Thin "),local("Lato-Thin"),url(/static/lato-latin-100-f8028e61362a54aa64dcb26e8063d0d7.woff2) format("woff2"),url(/static/lato-latin-100-752c20224144760a496fb9e19a62f616.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:100;src:local("Lato Thin italic"),local("Lato-Thinitalic"),url(/static/lato-latin-100italic-ef884f11c6adb5df51c446911612e7af.woff2) format("woff2"),url(/static/lato-latin-100italic-6ea8380326f67e10380953b188d96a2b.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:300;src:local("Lato Light "),local("Lato-Light"),url(/static/lato-latin-300-bbbd26aeee9c5b967e35933bce02d358.woff2) format("woff2"),url(/static/lato-latin-300-ba2452bdc790a4fee05202eac3c092b3.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:300;src:local("Lato Light italic"),local("Lato-Lightitalic"),url(/static/lato-latin-300italic-7d718d7299ab7f9fab17d7d4f13ded57.woff2) format("woff2"),url(/static/lato-latin-300italic-06eb177ee6c1960bcd79f1cf8c812000.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:400;src:local("Lato Regular "),local("Lato-Regular"),url(/static/lato-latin-400-f1a4a058fbba1e35a406188ae7eddaf8.woff2) format("woff2"),url(/static/lato-latin-400-62fb51e9e645f63599238881b9de15dd.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:400;src:local("Lato Regular italic"),local("Lato-Regularitalic"),url(/static/lato-latin-400italic-b45e52f342dc29c8553f51a99f924871.woff2) format("woff2"),url(/static/lato-latin-400italic-c4082958a18f04bd32a3d3e1f5e390a5.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:700;src:local("Lato Bold "),local("Lato-Bold"),url(/static/lato-latin-700-7fbbfd1610770d594aef639cfefdd0b0.woff2) format("woff2"),url(/static/lato-latin-700-96759e32fdc800c78b527a3e53fe2be6.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:700;src:local("Lato Bold italic"),local("Lato-Bolditalic"),url(/static/lato-latin-700italic-c66215e09d2420885ad1a1f3eb2bac37.woff2) format("woff2"),url(/static/lato-latin-700italic-0a06ba1bdf385495f2679324cfbedd13.woff) format("woff")}@font-face{font-family:Lato;font-style:normal;font-display:swap;font-weight:900;src:local("Lato Black "),local("Lato-Black"),url(/static/lato-latin-900-f2de2c6ec69b0c11f1bc44c5348c2f35.woff2) format("woff2"),url(/static/lato-latin-900-d79dd0661ba130ec7a7e7c060fcb7e09.woff) format("woff")}@font-face{font-family:Lato;font-style:italic;font-display:swap;font-weight:900;src:local("Lato Black italic"),local("Lato-Blackitalic"),url(/static/lato-latin-900italic-fd67cf72cde7716bdadf8a3992b37fa2.woff2) format("woff2"),url(/static/lato-latin-900italic-e792d6c62329e025ca1cbea793ba8de5.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}pre[class*=language-].line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}pre[class*=language-].line-numbers>code{position:relative;white-space:inherit}.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:0;font-size:100%;left:-3.8em;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}</style><meta name="generator" content="Gatsby 2.1.18"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#fff"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png"/><title data-react-helmet="true">WebSocket协议学习笔记 | William&#x27;s Blog</title><meta data-react-helmet="true" name="description" content="http协议是一个单向、无连接、无状态的协议。因为协议的特性，在客户端需要即时获取服务端变动的业务场景下，http协议通信效率低下。为了弥补http协议这方面的缺陷，人们设计出了WebSocket协议。该协议建立在http协议的基础上，对http协议的功能进行了扩展。本文详细介绍了WebSocket协议的基本概念及其使用方法。"/><meta data-react-helmet="true" property="og:title" content="WebSocket协议学习笔记"/><meta data-react-helmet="true" property="og:description" content="http协议是一个单向、无连接、无状态的协议。因为协议的特性，在客户端需要即时获取服务端变动的业务场景下，http协议通信效率低下。为了弥补http协议这方面的缺陷，人们设计出了WebSocket协议。该协议建立在http协议的基础上，对http协议的功能进行了扩展。本文详细介绍了WebSocket协议的基本概念及其使用方法。"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="William"/><meta data-react-helmet="true" name="twitter:title" content="WebSocket协议学习笔记"/><meta data-react-helmet="true" name="twitter:description" content="http协议是一个单向、无连接、无状态的协议。因为协议的特性，在客户端需要即时获取服务端变动的业务场景下，http协议通信效率低下。为了弥补http协议这方面的缺陷，人们设计出了WebSocket协议。该协议建立在http协议的基础上，对http协议的功能进行了扩展。本文详细介绍了WebSocket协议的基本概念及其使用方法。"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;font-family:PingFang SC,Helvetica Neue,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Helvetica,Arial,Verdana,sans-serif;
+;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}.gatsby-highlight-code-line{background-color:#feb;display:block;margin-right:-1em;margin-left:-1em;padding-right:1em;padding-left:0.75em;border-left:0.25em solid #f99;color:rgba(0, 0, 0, .9);}.gatsby-highlight-code-line .token.punctuation{color:rgba(0, 0, 0, .9);}.gatsby-highlight{background-color:#2d2d2d;border-radius:0.3em;margin:0.5em 0;padding:1em;overflow:auto;}.gatsby-highlight pre[class*="language-"]{background-color:transparent;margin:0;padding:0;overflow:initial;float:left;min-width:100%;}.gatsby-highlight pre[class*="language-"].line-numbers{padding-left:2.8em;}</style><style data-styled="hsSGOy gCQMkg iLwMgH itkTeT guBkEQ jwJkRe kiXwkj dZBnav fBJedd" data-styled-version="4.1.3">
+/* sc-component-id: bio__Container-w4lf8v-0 */
+.jwJkRe{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:5.25rem;}
+/* sc-component-id: bio__StyledImage-w4lf8v-1 */
+.kiXwkj{margin-right:0.875rem;margin-bottom:0;min-width:50;border-radius:100%;-webkit-flex:none;-ms-flex:none;flex:none;}
+/* sc-component-id: bio__Paragraph-w4lf8v-2 */
+.dZBnav{margin-bottom:0;}
+/* sc-component-id: layout__StyledLink-sc-1q48o6v-1 */
+.iLwMgH{box-shadow:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;}
+/* sc-component-id: layout__StyledH3-sc-1q48o6v-2 */
+.gCQMkg{margin-top:0;}
+/* sc-component-id: layout__Container-sc-1q48o6v-3 */
+.hsSGOy{margin:0 auto;max-width:42rem;padding:2.625rem 1.3125rem;font-family:Lato,PingFang SC,Microsoft YaHei,sans-serif;}
+/* sc-component-id: blog-post__Date-sc-7rm6jt-0 */
+.itkTeT{margin:0;font-size:0.875rem;}
+/* sc-component-id: blog-post__Line-sc-7rm6jt-1 */
+.guBkEQ{margin-bottom:1.75rem;}
+/* sc-component-id: blog-post__Ul-sc-7rm6jt-2 */
+.fBJedd{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;list-style:none;padding:0;}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-cc89bbc9aeb5b2be46c9.js"/><link as="script" rel="preload" href="/1-45b936232ae148a270d3.js"/><link as="script" rel="preload" href="/0-7e8d431324bae557f8b9.js"/><link as="script" rel="preload" href="/app-0b0e7ef74b4e2889141b.js"/><link as="script" rel="preload" href="/styles-9015553c21dea2bb7325.js"/><link as="script" rel="preload" href="/webpack-runtime-8a5d8af5dd7cbfe57a7a.js"/><link as="fetch" rel="preload" href="/static/d/456/path---notes-20180312213842-8-af-aa4-s3Qz7ugZ2TIeeBc2PYw9ql3Zi0.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="layout__Container-sc-1q48o6v-3 hsSGOy"><header><h3 class="layout__StyledH3-sc-1q48o6v-2 gCQMkg"><a class="layout__StyledLink-sc-1q48o6v-1 iLwMgH" href="/">William&#x27;s Blog</a></h3></header><main><h1>WebSocket协议学习笔记</h1><p class="blog-post__Date-sc-7rm6jt-0 itkTeT">March 12, 2018</p><div><h2>协议产生背景</h2>
+<p>　　http协议是一个单向、无连接、无状态的协议。因为协议的特性，在客户端需要即时获取服务端变动的业务场景下，http协议通信效率低下。为了弥补http协议这方面的缺陷，人们设计出了WebSocket协议。该协议建立在http协议的基础上，对http协议的功能进行了扩展。图1展示了WebSocket协议和http协议的关系。</p>
+<div style="text-align: center;">
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/07e7ff97417a607f47c3012b032b39a5/7d191/http_websocket.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 37.7959927140255%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAABu0lEQVQoz12R2Y4SURRFq1GGAmouipoH4BbI0AxFMCHaaU2bGBPTb774A/7/DywPhfrgw07OvblZWXcfbdgxuWWgGbhDlywISCcJm+0Tl+t3mstXFrMjRbohcEusvs0ijXg3SznvKi6PM5pNxbJMqaIQTX8w/gEd3eZQx1RxQhqvUfMzanEmz/ZUZUOZn7D0UKAWZs8mmwQCn1IEHs7AwBs5aMOOxfCN1UL1tz6ZgKxRShwoimyLa8TU2ZRVEaHSkP0y57QuxapkVcaEvqIsTpID466H1tf6dLUeujbAdxXZ4oUwbqjyHYt5g2/GqCxiWSTtFz9fa54uikcB71ROHilm5b6tZNwVwzB5T1JeCcIDjpHh2ArXzOXBmjzdMrVDppZH4km3ftDOsTtpZ6NriYwu6dMToVt92uL0k8PzL6rtK75Xk1TPpOmBU/PC/viFIq5IXI8yDJknUdvbrXyVxfhjl4FARm1l99rky2OhD+XSFsMU26zEMGNeHSUnuTeZGK6Y+W0ixye0/TtMuy/072Jb4LDz5/AwxnWkw/obeXnh+vGVD59+sKrPZL5PHkzFUiJ2N8Pb+X/YLb8BMNPP1jIH8FcAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="websocket协议与http协议的关系"
+        title=""
+        src="/static/07e7ff97417a607f47c3012b032b39a5/40fad/http_websocket.png"
+        srcset="/static/07e7ff97417a607f47c3012b032b39a5/707e9/http_websocket.png 148w,
+/static/07e7ff97417a607f47c3012b032b39a5/649e0/http_websocket.png 295w,
+/static/07e7ff97417a607f47c3012b032b39a5/40fad/http_websocket.png 590w,
+/static/07e7ff97417a607f47c3012b032b39a5/b3fef/http_websocket.png 885w,
+/static/07e7ff97417a607f47c3012b032b39a5/301c0/http_websocket.png 1180w,
+/static/07e7ff97417a607f47c3012b032b39a5/b5a53/http_websocket.png 1770w,
+/static/07e7ff97417a607f47c3012b032b39a5/7d191/http_websocket.png 2196w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+</div>
+<div style="text-align: center;">图1 WebSocket协议与http协议的关系</div>
+<h2>建立WebSocket通信</h2>
+<h3>客户端</h3>
+<p>　　HTML5将WebSocket协议标准化，目前各大主流浏览器均已支持WebSocket协议。浏览器提供了一个<a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket">WebSocket对象</a>用来创建和管理WebSocket连接。客户端可以利用这一对象与服务器进行WebSocket通信。一个简单的客户端建立WebSocket通信的代码如下：</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Create WebSocket connection.</span>
+<span class="token keyword">const</span> socket <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">WebSocket</span><span class="token punctuation">(</span><span class="token string">'ws://localhost:3000'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Connection opened</span>
+socket<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'open'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'websocket协议握手成功！！！'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Listen for messages</span>
+socket<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'message'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>event<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'收到新消息！！！'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Connection closed</span>
+socket<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'close'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'停止websocket协议！！！'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<h3>服务端</h3>
+<p>　　目前，针对不同的服务器环境均有对应的WebSocket框架可以使用，详情可见<a href="https://en.wikipedia.org/wiki/Comparison_of_WebSocket_implementations">维基百科</a>。适用于Node环境的WebSocket框架主要有以下几类：</p>
+<ul>
+<li><strong><a href="https://github.com/websockets/ws">ws</a></strong></li>
+<li><strong><a href="https://github.com/uNetworking/uWebSockets">uWebSockets</a></strong></li>
+<li><strong><a href="https://socket.io/">socket.io</a></strong></li>
+</ul>
+<p>　　以Node环境下的<strong><a href="https://github.com/websockets/ws">ws</a></strong>框架为例，一个简单的服务器端实现WebSocket协议的示例代码如下：</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// import http module</span>
+<span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// import ws</span>
+<span class="token keyword">const</span> websocket <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'ws'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// create http server</span>
+<span class="token keyword">const</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span><span class="token function">callback</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// create websocket instance</span>
+<span class="token keyword">const</span> websocketServer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">websocket<span class="token punctuation">.</span>Server</span><span class="token punctuation">(</span><span class="token punctuation">{</span>server<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// listen for connection</span>
+websocketServer<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'connection'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>ws<span class="token punctuation">,</span> req<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token comment">// listen for messages</span>
+    ws<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'message'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>msg<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"收到了新消息！！！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ws<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'您好，我已经收到了你的消息'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<h3>WebSocket协议握手</h3>
+<p>　　WebSocket协议使用了http协议的握手通道，由http协议升级到WebSocket协议时的http报文示例如下：</p>
+<ul>
+<li>
+<p><strong>request</strong></p>
+<div style="text-align: center">
+</li>
+</ul>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/24802716c8898a405bcca37a58137c73/175e8/websocket_request.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 41.37404580152672%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAABSUlEQVQoz51Sa4+CQAzk//+2C4JCQEUPUFAeu7DAISo41zbxw325S26TSZt9TKfTtbIsw2azgeu6iOMYRVHicDwiv1zR9wOmacLj8cD9fpf4er1+hWWMwXq9hkekQRAiSc9QuoHpOnR9L6TjOEq83Sb8tSylNTzPI1Wf2O4PRHjC6ZyhqmtcSe3lWkApjaKsJGflZVWjImT5Becsl8hnfN9qW4PtLkKcpPD8AB+2Iyr5IZMwqlpJgZLymvKmaQXvIgzOubCllKJWA1KVE+kJKakbx5vgP8vS1LJt2/B9H2G4JdKEFKZCfowTxGQBt9IPg3jLyliJpjjPs5D8GMqbcLVawXFcan8nHvFAjOkETMaXn0TwfM5EtGBZFtnj+IYQNk1DRA72UYSQvOShsF/sIUf2jBVqUjcMX2jpV3ARLspn/Bt4DqyebfoGeZldNc/eyYgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="websocket协议握手时http请求报文"
+        title=""
+        src="/static/24802716c8898a405bcca37a58137c73/40fad/websocket_request.png"
+        srcset="/static/24802716c8898a405bcca37a58137c73/707e9/websocket_request.png 148w,
+/static/24802716c8898a405bcca37a58137c73/649e0/websocket_request.png 295w,
+/static/24802716c8898a405bcca37a58137c73/40fad/websocket_request.png 590w,
+/static/24802716c8898a405bcca37a58137c73/b3fef/websocket_request.png 885w,
+/static/24802716c8898a405bcca37a58137c73/301c0/websocket_request.png 1180w,
+/static/24802716c8898a405bcca37a58137c73/175e8/websocket_request.png 1310w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+</div>
+<ul>
+<li>
+<p><strong>response</strong></p>
+<div style="text-align: center;">
+</li>
+</ul>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/3d53dbe030b0a0caf79ad3f2b72d4cf1/08646/websocket_response.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 11.094224924012158%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsSAAALEgHS3X78AAAAYElEQVQI13WMMQ6AIBAE+f8DEVQK7IgcUEAiBFiFWOokk612mDEGnHNIKbErBec9rLXwPqCUgitn5NdaK3rvaK3N/ZKllGZwEQJy3aD1gRjTEw4zSuRAzuG0NKODcfzjBj6/mbvFnF1JAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="websocket协议握手时http响应报文"
+        title=""
+        src="/static/3d53dbe030b0a0caf79ad3f2b72d4cf1/40fad/websocket_response.png"
+        srcset="/static/3d53dbe030b0a0caf79ad3f2b72d4cf1/707e9/websocket_response.png 148w,
+/static/3d53dbe030b0a0caf79ad3f2b72d4cf1/649e0/websocket_response.png 295w,
+/static/3d53dbe030b0a0caf79ad3f2b72d4cf1/40fad/websocket_response.png 590w,
+/static/3d53dbe030b0a0caf79ad3f2b72d4cf1/b3fef/websocket_response.png 885w,
+/static/3d53dbe030b0a0caf79ad3f2b72d4cf1/301c0/websocket_response.png 1180w,
+/static/3d53dbe030b0a0caf79ad3f2b72d4cf1/08646/websocket_response.png 1316w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+</div>
+<p>　　上述http报文中与WebSocket协议握手阶段相关的字段解释如下：</p>
+<div style="text-align: center;">表1 WebSocket协议握手阶段http报文首部相关字段解释</div>
+<table>
+<thead>
+<tr>
+<th align="center">字段名称</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Connection: Upgrade</td>
+<td align="center">表示要升级协议。</td>
+</tr>
+<tr>
+<td align="center">Upgrade:websocket</td>
+<td align="center">表示要升级到WebSocket协议。</td>
+</tr>
+<tr>
+<td align="center">Sec-WebSocket-Extensions</td>
+<td align="center">仅用在WebSocket连接握手阶段。它先由客户端(浏览器)发送到服务器，然后再由服务器传回客户端，以便协商连接过程中的协议层扩展集。可能在HTTP请求中出现多次(等价于出现一次，但有多个值)，但是最多只能在HTTP响应中出现一次。</td>
+</tr>
+<tr>
+<td align="center">Sec-WebSocket-Key</td>
+<td align="center">Base64编码字符串，与服务端响应首部的Sec-WebSocket-Accept是配套的，提供基本的防护，比如恶意的连接，或者无意的连接。</td>
+</tr>
+<tr>
+<td align="center">Sec-WebSocket-Version</td>
+<td align="center">表示websocket的版本。如果服务端不支持该版本，需要返回一个Sec-WebSocket-Version首部字段，里面包含服务端支持的版本号。</td>
+</tr>
+<tr>
+<td align="center">Sec-WebSocket-Accept</td>
+<td align="center">Base64编码字符串，根据客户端请求首部的Sec-WebSocket-Key计算出来。</td>
+</tr>
+</tbody>
+</table>
+<p>　　Sec-WebSocket-Accept字段计算公式：</p>
+<ol>
+<li>将Sec-WebSocket-Key跟258EAFA5-E914-47DA-95CA-C5AB0DC85B11拼接。</li>
+<li>通过SHA1计算出摘要，并转成base64字符串。伪代码：toBase64(sha1(Sec-WebSocket-Key + 258EAFA5-E914-47DA-95CA-C5AB0DC85B11))。</li>
+</ol>
+<h2>参考文献</h2>
+<ol>
+<li><a href="http://www.ruanyifeng.com/blog/2017/05/websocket.html">WebSocket 教程</a></li>
+<li><a href="https://www.zhihu.com/question/20215561">知乎：WebSocket 是什么原理？为什么可以实现持久连接？</a></li>
+<li><a href="https://mp.weixin.qq.com/s/rKvoevbSmtAUoCgOH2lZdQ">WebSocket：5分钟从入门到精通</a></li>
+<li><a href="http://blog.csdn.net/tennysonsky/article/details/44562435">如何理解HTTP协议的 “无连接，无状态” 特点？</a></li>
+<li><a href="https://blog.lyz810.com/article/2016/06/websocket-handshake-server-response/">WebSocket协议详解及应用(三)-WebSocket握手协议之服务器响应</a></li>
+</ol></div><hr class="blog-post__Line-sc-7rm6jt-1 guBkEQ"/><div class="bio__Container-w4lf8v-0 jwJkRe"><div class="bio__StyledImage-w4lf8v-1 kiXwkj gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:80px;height:80px"><img src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDBAH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAcWrJw7AUk1RjRKgf//EABsQAAIDAQEBAAAAAAAAAAAAAAECAAMRMhIz/9oACAEBAAEFAlWCsCMMLW5LnYNsHV2lQnoN9LZVx//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPwFsYkmP/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERAhD/2gAIAQIBAT8B5R6dP//EABwQAAICAgMAAAAAAAAAAAAAAAABEBEhUWFxkf/aAAgBAQAGPwK2dxsSTwZObE3suzyf/8QAHhABAAICAgMBAAAAAAAAAAAAAQARITFB4WFxgbH/2gAIAQEAAT8h7yGiJV81ctSOkAPN8xEgDRgihoZ8zU9Ev4WcJVtWzb7jT6T9J//aAAwDAQACAAMAAAAQ38QO/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAwEBPxDkRgGUHL//xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAECAQE/EO2NtSAgb//EACAQAQACAgEEAwAAAAAAAAAAAAEAESExQVFhcaGBsfD/2gAIAQEAAT8QEqgrK8IAhQ0M/M5FrtUcaUScL9c6Lb0L0rzEywbLiRUJo6JQrxMsECCsvPqXB9q5mbc3+4aNcp7mvy+5/9k=" alt="William" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition:opacity 0.5s;transition-delay:0.25s;border-radius:50%;margin-bottom:0"/><noscript><picture><img width="80" height="80" srcset="/static/d8cfc41f70b8f5ee7de474fa18a178c1/added/profile-pic.jpg 1x,
+/static/d8cfc41f70b8f5ee7de474fa18a178c1/2d23b/profile-pic.jpg 1.5x,
+/static/d8cfc41f70b8f5ee7de474fa18a178c1/f9571/profile-pic.jpg 2x,
+/static/d8cfc41f70b8f5ee7de474fa18a178c1/390dc/profile-pic.jpg 3x" src="/static/d8cfc41f70b8f5ee7de474fa18a178c1/added/profile-pic.jpg" alt="William" style="position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p class="bio__Paragraph-w4lf8v-2 dZBnav">本博客作者 <strong>William</strong> 现任职于北京贝壳找房，从事web前端开发相关工作。<br/>您可以通过<a href="mailto:yanfangyao2014@icloud.com">Email</a>与他取得联系</p></div><ul class="blog-post__Ul-sc-7rm6jt-2 fBJedd"><li><a rel="prev" href="/translate/20180202205143/">← <!-- -->为什么setTimeout和setInterval的实际延时比设置的时间长</a></li><li><a rel="next" href="/notes/20180314211238/">Base-64编码学习笔记<!-- --> →</a></li></ul></main><footer>© <!-- -->2019<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-111698174-1', 'auto', {});
+      
+      
+      
+      }
+      </script><script>
+                  var _hmt = _hmt || [];
+                  (function() {
+                      var hm = document.createElement("script");
+                      hm.src = "//hm.baidu.com/hm.js?02fa82985b3d8ddaab333fe7416b1bf2";
+                      var s = document.getElementsByTagName("script")[0]; 
+                      s.parentNode.insertBefore(hm, s);
+                  })();
+              </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"notes-20180312213842-8af","path":"/notes/20180312213842/"};window.dataPath="456/path---notes-20180312213842-8-af-aa4-s3Qz7ugZ2TIeeBc2PYw9ql3Zi0";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-0b0e7ef74b4e2889141b.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-1969167b6a1e70fd6be8.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-cc89bbc9aeb5b2be46c9.js"],"component---src-pages-404-js":["/component---src-pages-404-js-7b83b5a78a563ef4f16c.js"],"component---src-pages-index-js":["/component---src-pages-index-js-9cf9987aea4216fe0655.js"],"pages-manifest":["/pages-manifest-4102573875686233e3e9.js"]};/*]]>*/</script><script src="/webpack-runtime-8a5d8af5dd7cbfe57a7a.js" async=""></script><script src="/styles-9015553c21dea2bb7325.js" async=""></script><script src="/app-0b0e7ef74b4e2889141b.js" async=""></script><script src="/0-7e8d431324bae557f8b9.js" async=""></script><script src="/1-45b936232ae148a270d3.js" async=""></script><script src="/component---src-templates-blog-post-js-cc89bbc9aeb5b2be46c9.js" async=""></script></body></html>
